@@ -4,6 +4,6 @@ const numbers = [
   [111, 200, 333, 400, 555],
 ];
 
-numbers.map((e) => e.map((elem, i) => (elem % 2 === 0 ? e.splice(i, 1) : 0)));
+numbers.map((e) => e.map((elem, i) => (elem % 2 !== 0 ? e.splice(i, 1) : 0)));
 
 console.log(numbers);
